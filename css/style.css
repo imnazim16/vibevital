@@ -93,12 +93,7 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
-.inner-banr-sec {
-	background: url('../img/aboutbanner.jpg') no-repeat center center;
-	background-size: cover;
-	height: 400px;
-	position: relative;
-}
+
 .inner-bg {
 	background-image: linear-gradient(
 		90deg,
@@ -113,6 +108,7 @@ h3 {
 .inner-banner-content h4 {
 	font-size: 3.5rem;
 	color: var(--color-white);
+	margin-bottom: 1rem;
 }
 .inner-banner-content p {
 	font-size: 1.5rem;
@@ -133,6 +129,7 @@ h3 {
 .innner-bnr-links ul li a:hover {
 	color: var(--e-global-color-ec3c7a7);
 }
+
 /* ---- Header Section ---- */
 .header-main-container {
 	display: flex;
@@ -1057,6 +1054,12 @@ footer {
 /* =========================
 		About Page CSS
 ========================= */
+.inner-banr-sec {
+	background: url('../img/aboutbanner.jpg') no-repeat center center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+}
 
 .about-choose-sec .choose-us-container {
 	padding: 5rem 0 0rem;
@@ -1124,6 +1127,13 @@ footer {
 /* =========================
 		Service Page CSS
 ========================= */
+.inner-srvc-sec {
+	background: url('../img/serviceinner.jpg') no-repeat center center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+}
+
 .srvc-page.service-sec {
 	padding: 5rem 0;
 }
