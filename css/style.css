@@ -46,7 +46,7 @@ h2 {
 }
 h3 {
 	color: var(--e-global-color-d49ac81);
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: 500;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
@@ -1119,4 +1119,11 @@ footer {
 }
 .team-card .header-social-links ul li a:hover i {
 	color: var(--color-white);
+}
+
+/* =========================
+		Service Page CSS
+========================= */
+.srvc-page.service-sec {
+	padding: 5rem 0;
 }
