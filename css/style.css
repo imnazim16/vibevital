@@ -92,6 +92,46 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
+.inner-banr-sec {
+	background: url('../img/aboutbanner.jpg') no-repeat center center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+}
+.inner-bg {
+	background-image: linear-gradient(
+		90deg,
+		var(--e-global-color-638d055) 0%,
+		#2323231a 100%
+	);
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.inner-banner-content h2 {
+	font-size: 3.5rem;
+	color: var(--color-white);
+}
+.inner-banner-content p {
+	font-size: 1.5rem;
+	color: var(--color-white);
+	max-width: 550px;
+	margin-bottom: 1rem;
+}
+.innner-bnr-links ul {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--color-white);
+}
+.innner-bnr-links ul li a {
+	color: var(--color-white);
+	transition: var(--transition);
+}
+.innner-bnr-links ul li a:hover {
+	color: var(--e-global-color-ec3c7a7);
+}
 /* ---- Header Section ---- */
 .header-main-container {
 	display: flex;
@@ -343,7 +383,7 @@ nav ul li a:hover {
 		no-repeat center center;
 	padding: 5rem 0;
 	position: relative;
-	height: 400px;
+	height: 450px;
 }
 .values-bg {
 	position: absolute;
@@ -611,7 +651,7 @@ nav ul li a:hover {
 /* ---- Why Choose Us Section ---- */
 .choose-us-sec {
 	background: var(--e-global-color-cfa1f76) url(../img/bg_top__right.png)
-		no-repeat 98% 0%;
+		no-repeat 98% 2%;
 }
 .choose-us-sec .grid-column-two {
 	gap: 5rem;
@@ -1011,4 +1051,63 @@ footer {
 }
 .terms-condition ul li a:hover {
 	color: var(--e-global-color-ec3c7a7);
+}
+
+/* =========================
+		About Page CSS
+========================= */
+
+.about-choose-sec .choose-us-container {
+	padding: 5rem 0 0rem;
+}
+
+.team-sec .grid-column-four {
+	gap: 2rem;
+}
+.team-card {
+	border-radius: 0.5rem;
+}
+.team-image {
+	margin-bottom: 1rem;
+	position: relative;
+}
+.team-image img {
+	width: 100%;
+	border-radius: 0.5rem;
+}
+.team-mem-info {
+	text-align: center;
+}
+.team-mem-info h5 {
+	color: var(--e-global-color-638d055);
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+.team-mem-info h6 {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--e-global-color-ec3c7a7);
+	margin-bottom: 1rem;
+}
+.team-card .header-social-links ul {
+	justify-content: center;
+}
+
+.team-card .header-social-links ul li a {
+	background: var(--e-global-color-7fbea4f);
+}
+.team-card .header-social-links ul li a:hover {
+	background: var(--e-global-color-ec3c7a7);
+	color: var(--color-white);
+}
+.team-card .header-social-links ul li a i {
+	color: var(--e-global-color-638d055);
+}
+.team-card .header-social-links ul li a:hover i {
+	color: var(--color-white);
+}
+.team-card .header-social-links ul li a:hover i {
+	color: var(--color-white);
 }
