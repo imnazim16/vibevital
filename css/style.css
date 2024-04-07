@@ -46,9 +46,10 @@ h2 {
 }
 h3 {
 	color: var(--e-global-color-d49ac81);
-	font-size: 0.8rem;
+	font-size: 1.1rem;
 	font-weight: 500;
 	margin-bottom: 1rem;
+	text-transform: uppercase;
 }
 
 /* ---- Reusable CSS ---- */
@@ -109,14 +110,14 @@ h3 {
 	flex-direction: column;
 	justify-content: center;
 }
-.inner-banner-content h2 {
+.inner-banner-content h4 {
 	font-size: 3.5rem;
 	color: var(--color-white);
 }
 .inner-banner-content p {
 	font-size: 1.5rem;
 	color: var(--color-white);
-	max-width: 550px;
+	max-width: 530px;
 	margin-bottom: 1rem;
 }
 .innner-bnr-links ul {
@@ -1063,6 +1064,14 @@ footer {
 
 .team-sec .grid-column-four {
 	gap: 2rem;
+}
+.team-sec h3 {
+	text-align: center;
+}
+.team-sec h2 {
+	text-align: center;
+	margin: 0 auto 3rem;
+	max-width: 600px;
 }
 .team-card {
 	border-radius: 0.5rem;
