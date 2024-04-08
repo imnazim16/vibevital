@@ -942,7 +942,7 @@ nav ul li a:hover {
 	width: 100%;
 }
 .test-card {
-	margin-left: 2rem;
+	margin: 0 1rem;
 }
 .test-slider {
 	position: relative;
