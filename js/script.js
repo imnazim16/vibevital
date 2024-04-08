@@ -30,11 +30,13 @@ $('.logo-slider').slick({
 });
 
 $('.test-slider').slick({
-	arrows: true,
+	infinite: true,
 	slidesToShow: 3,
 	slidesToScroll: 1,
-	infinite: true,
-	autoplaySpeed: 1000,
+	arrows: true,
+	dots: false,
+	autoplay: true,
+	autoplaySpeed: 2000,
 	responsive: [
 		{
 			breakpoint: 995,
