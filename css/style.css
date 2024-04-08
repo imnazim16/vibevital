@@ -13,6 +13,7 @@
 	--e-global-color-638d055: #232323;
 	--e-global-color-ec3c7a7: #ff9195;
 	--e-global-color-3ee16e7: #885dd1;
+	--text-color: #777;
 	--color-white: #fff;
 
 	--transition: all 0.5s ease;
@@ -26,7 +27,7 @@
 body {
 	font-family: 'Rubik', sans-serif;
 	font-size: 1rem;
-	color: var(--e-global-color-c94d9ab);
+	color: var(--e-global-color-primary);
 }
 ul {
 	padding: 0;
@@ -112,6 +113,7 @@ h3 {
 	font-size: 3.5rem;
 	color: var(--color-white);
 	margin-bottom: 1rem;
+	font-weight: 400;
 }
 .inner-banner-content p {
 	font-size: 1.5rem;
@@ -184,7 +186,7 @@ nav ul {
 nav ul li a {
 	font-size: 1.1rem;
 	font-weight: 400;
-	color: var(--e-global-color-c94d9ab);
+	color: var(--e-global-color-044b931);
 	display: flex;
 	align-items: center;
 	gap: 0.3rem;
@@ -494,6 +496,7 @@ nav ul li a:hover {
 }
 .service-content p {
 	margin-bottom: 2rem;
+	line-height: 1.6;
 }
 .list1 ul {
 	border-top: 1px solid var(--e-global-color-4d462f5);
@@ -1020,6 +1023,7 @@ footer {
 	max-width: 400px;
 	line-height: 1.6;
 	margin-bottom: 1rem;
+	color: var(--color-white);
 }
 .ft-company-info .header-social-links ul {
 	gap: 0.5rem;
@@ -1046,7 +1050,7 @@ footer {
 	margin-bottom: 0.5rem;
 }
 .ft-links ul li a {
-	color: var(--e-global-color-c94d9ab);
+	color: var(--color-white);
 	transition: var(--transition);
 }
 .ft-links ul li a:hover {
@@ -1072,7 +1076,22 @@ footer {
 .terms-condition ul li a:hover {
 	color: var(--e-global-color-ec3c7a7);
 }
-
+.subs-btn {
+	border: none;
+	border-radius: 0.5rem;
+	font-family: 'Rubik', sans-serif;
+	width: 100%;
+	line-height: 50px;
+	cursor: pointer;
+}
+.ft-links p {
+	line-height: 1.6;
+	color: var(--color-white);
+}
+.newsletter input {
+	line-height: 50px;
+	margin: 1rem 0;
+}
 /* =========================
 		About Page CSS
 ========================= */
@@ -1289,4 +1308,85 @@ footer {
 }
 .form-btn i {
 	font-size: 1.3rem;
+}
+
+/* =========================
+		Blog Page CSS
+========================= */
+.inner-blog-sec {
+	background: url('../img/bloginner.jpg') no-repeat center center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+}
+.blog-sec .grid-column-three {
+	gap: 5rem 2rem;
+}
+.blog-image {
+	position: relative;
+	margin-bottom: 1.5rem;
+	height: 280px;
+}
+.blog-img-link {
+	display: block;
+}
+
+.blog-text {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	height: auto;
+	width: auto;
+	padding: 0.5rem 1rem;
+	background: var(--e-global-color-ec3c7a7);
+	color: var(--color-white);
+	border-radius: 5rem;
+	font-size: 0.8rem;
+	z-index: 3;
+}
+.blog-img-link img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.blog-card h4 {
+	margin-bottom: 1rem;
+}
+.blog-card h4 a {
+	color: var(--e-global-color-638d055);
+	font-size: 1.4rem;
+	font-weight: 400;
+	transition: var(--transition);
+}
+.blog-card h4 a:hover {
+	color: var(--e-global-color-ec3c7a7);
+}
+.blog-card p {
+	line-height: 1.4;
+	margin-bottom: 1.5rem;
+}
+.blog-card ul {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--e-global-color-4d462f5);
+}
+.blog-card ul li {
+	font-size: 0.8rem;
+}
+.dot {
+	position: relative;
+}
+.dot::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	height: 0.2rem;
+	width: 0.2rem;
+	background: var(--e-global-color-ec3c7a7);
+	border-radius: 50%;
 }
