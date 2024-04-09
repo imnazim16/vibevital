@@ -779,7 +779,7 @@ nav ul li a:hover {
 	font-size: 1.7rem;
 	font-weight: 400;
 	padding-bottom: 1rem;
-	border-bottom: 1px solid var(--e-global-color-4d462f5);
+	border-bottom: 1px solid var(--e-global-color-accent);
 	margin-bottom: 1rem;
 }
 .price {
@@ -789,7 +789,7 @@ nav ul li a:hover {
 	gap: 0.3rem;
 	color: var(--e-global-color-638d055);
 	padding-bottom: 1rem;
-	border-bottom: 1px solid var(--e-global-color-4d462f5);
+	border-bottom: 1px solid var(--e-global-color-accent);
 	margin-bottom: 1.8rem;
 }
 .price h5 {
@@ -807,9 +807,9 @@ nav ul li a:hover {
 	margin-bottom: 1rem;
 }
 .feature-list ul li {
-	padding-bottom: 1rem;
+	padding: 0.8rem 0;
 	border-bottom: 1px solid var(--e-global-color-4d462f5);
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 .feature-list ul li:last-child {
 	border: none;
@@ -828,7 +828,9 @@ nav ul li a:hover {
 .pricing-bg {
 	background-color: var(--e-global-color-638d055);
 }
-
+.pricing-bg ul li {
+	border-bottom: 1px solid var(--e-global-color-accent);
+}
 .pricing-bg h4 {
 	color: var(--color-white);
 }
@@ -1105,7 +1107,6 @@ footer {
 	align-items: center;
 	border-top: 1px solid var(--e-global-color-c94d9ab);
 	padding: 2rem 0;
-	font-size: 0.8rem;
 }
 .terms-condition ul {
 	display: flex;
@@ -1134,6 +1135,10 @@ footer {
 .newsletter input {
 	line-height: 50px;
 	margin: 1rem 0;
+}
+.newsletter input:focus {
+	outline: 2px solid var(--e-global-color-ec3c7a7);
+	border: none;
 }
 /* =========================
 		About Page CSS
