@@ -48,3 +48,17 @@ $('.test-slider').slick({
 		},
 	],
 });
+
+// ------- pop-up ---------
+
+const popUpOpen = document.querySelector('.btn-poup'); 
+const closeBtn = document.querySelector('.btn-close');
+const popUpBox = document.querySelector('.pop-up-container')
+
+popUpOpen.addEventListener('click', ()=>{
+	popUpBox.classList.add('active')
+})
+
+closeBtn.addEventListener('click', ()=>{
+	popUpBox.classList.remove('active')
+})
