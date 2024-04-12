@@ -62,3 +62,22 @@ popUpOpen.addEventListener('click', ()=>{
 closeBtn.addEventListener('click', ()=>{
 	popUpBox.classList.remove('active')
 })
+
+// ------- Accordian ---------
+
+let accBox = document.querySelectorAll('.acc-box');
+let symbol = document.querySelectorAll('.symbol');
+
+accBox.forEach((item, index) => {
+	
+	item.addEventListener('click', ()=>{
+		accBox.forEach(cuurItem => {
+			cuurItem.classList.remove('active')	
+		})
+		item.classList.add('active')
+		symbol.forEach(symbol => {
+			symbol.textContent = '+'
+		})
+		symbol[index].textContent = "-"
+	})
+});

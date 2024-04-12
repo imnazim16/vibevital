@@ -1154,63 +1154,54 @@ footer {
 	padding: 5rem 0 0rem;
 }
 
-.team-sec .grid-column-four {
-	gap: 2rem;
-}
-.team-sec h3 {
+.faq-sec h3 {
 	text-align: center;
 }
-.team-sec h2 {
+
+.faq-sec h2 {
 	text-align: center;
-	margin: 0 auto 3rem;
-	max-width: 600px;
+	margin-bottom: 3rem;
 }
-.team-card {
-	border-radius: 0.5rem;
+
+.acc-container {
+	width: 800px;
+	margin: auto;
 }
-.team-image {
-	margin-bottom: 1rem;
-	position: relative;
-}
-.team-image img {
+.acc-box {
 	width: 100%;
-	border-radius: 0.5rem;
+	cursor: pointer;
 }
-.team-mem-info {
-	text-align: center;
-}
-.team-mem-info h5 {
-	color: var(--e-global-color-638d055);
-	font-size: 1.4rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
-}
-
-.team-mem-info h6 {
-	font-size: 1rem;
-	font-weight: 400;
-	color: var(--e-global-color-ec3c7a7);
-	margin-bottom: 1rem;
-}
-.team-card .header-social-links ul {
-	justify-content: center;
-}
-
-.team-card .header-social-links ul li a {
+.acc-heading {
 	background: var(--e-global-color-7fbea4f);
+	padding: 1rem;
+	border-bottom: 1px solid var(--e-global-color-4d462f5);
 }
-.team-card .header-social-links ul li a:hover {
-	background: var(--e-global-color-ec3c7a7);
-	color: var(--color-white);
+
+.acc-text {
+	max-height: 0;
+	overflow: hidden;
 }
-.team-card .header-social-links ul li a i {
+.acc-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.5rem;
 	color: var(--e-global-color-638d055);
 }
-.team-card .header-social-links ul li a:hover i {
-	color: var(--color-white);
+.acc-heading h5 {
+	font-weight: 400;
 }
-.team-card .header-social-links ul li a:hover i {
-	color: var(--color-white);
+
+.acc-box.active .acc-text {
+	max-height: 100vh;
+	transition: all 1s ease;
+}
+.acc-text p {
+	line-height: 1.6;
+	color: var(--e-global-color-primary);
+}
+.acc-box.active .acc-text p {
+	padding: 0.8rem 1rem;
 }
 
 /* =========================
