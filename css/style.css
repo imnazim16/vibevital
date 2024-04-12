@@ -105,9 +105,12 @@ h3 {
 		#2323231a 100%
 	);
 	height: 400px;
+}
+.inner-banner-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	height: 400px;
 }
 .inner-banner-content h4 {
 	font-size: 3.5rem;
@@ -162,11 +165,13 @@ input:focus {
 		#2323231a 100%
 	);
 	height: 100vh;
+}
+.blog-inner-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	height: 100vh;
 }
-
 .blog-inner-content h2 {
 	font-size: 3rem;
 	color: var(--color-white);
@@ -278,6 +283,19 @@ nav ul li a:hover {
 	font-weight: 500;
 }
 
+.menu-bar {
+	display: none;
+}
+.close-menu {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+.sm-screen-links ul li a i {
+	color: var(--color-white);
+}
+
 /* ---- Hero Section ---- */
 .hero-sec {
 	background: url('../img/herobanner.jpg') no-repeat center center;
@@ -291,9 +309,13 @@ nav ul li a:hover {
 		#2323231a 100%
 	);
 	height: 800px;
+}
+.hero-content-conatiner {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	height: 800px;
+	width: 100%;
 }
 .hero-content-conatiner h3 {
 	margin-bottom: 1.5rem;
@@ -659,8 +681,7 @@ nav ul li a:hover {
 	font-size: 2.2rem;
 	color: var(--e-global-color-ec3c7a7);
 }
-.srvc-title {
-}
+
 .srvc-title h5 {
 	font-size: 1.4rem;
 	color: var(--e-global-color-638d055);
@@ -689,10 +710,6 @@ nav ul li a:hover {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	/* background-color: rgba(0, 0, 0, 0.4); */
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	background-image: linear-gradient(
 		135deg,
 		var(--e-global-color-044b931) 0%,
@@ -701,6 +718,11 @@ nav ul li a:hover {
 }
 .virtual-assitance {
 	color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
 }
 .virtual-assitance h5 {
 	font-size: 3rem;
@@ -882,7 +904,7 @@ nav ul li a:hover {
 	height: 659px;
 	object-fit: cover;
 }
-.vision-image2 {
+.vision-image-2 {
 	display: none;
 }
 .vision-image-2 img {
@@ -914,8 +936,8 @@ nav ul li a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 5rem;
-	width: 5rem;
+	height: 4rem;
+	width: 4rem;
 	border-radius: 100%;
 	background: var(--e-global-color-ec3c7a7);
 	color: var(--color-white);
@@ -935,62 +957,56 @@ nav ul li a:hover {
 }
 
 /* ---- Testimonials Section ---- */
-.testimonials-sec {
-	background: url(../img/map_bg.png) no-repeat 50% 54px;
+.test-sec {
+	background: rgb(255 255 255 / 89%);
+	height: 100vh;
+}
+.test-bg-img {
+	background: url('../img/map_bg.png') no-repeat 50% 54px;
 	background-size: 1000px;
-	position: relative;
 	height: 100vh;
 }
 
-.test-bg {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	background: rgb(255 255 255 / 95%);
-	z-index: 1;
-}
-/* .testimonials-sec h3 {
-	text-align: center;
-} */
-.testimonials-sec h2 {
-	/* text-align: center; */
-	margin-bottom: 3rem;
-}
-.testimonials-sec .grid-column-three {
-	gap: 2rem;
-}
-.test-content {
-	background: var(--e-global-color-cfa1f76);
-	padding: 2rem;
-	border-radius: 0.5rem;
-	line-height: 1.4;
-	margin-bottom: 1rem;
-}
-.test-client-info {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
-}
-.clt-image {
-	height: 3rem;
-	width: 3rem;
-	overflow: hidden;
-	border-radius: 50%;
-}
-.clt-image img {
-	width: 100%;
+.test-content-container {
+	padding: 5rem 0;
 }
 .test-card {
 	margin: 0 1rem;
 }
-.test-slider {
-	position: relative;
+.test-sec h2 {
+	margin-bottom: 3rem;
+}
+.client-feedback {
+	background: var(--e-global-color-7fbea4f);
+	padding: 3rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+.client-feedback p {
+	line-height: 1.4;
+}
+.client-image {
+	border-radius: 100%;
+	height: 4rem;
+	width: 4rem;
+	overflow: hidden;
+}
+.client-image img {
+	width: 100%;
+}
+.client-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.client-details h5 {
+	color: var(--e-global-color-638d055);
+	font-size: 1.2rem;
+	margin-bottom: 0.3rem;
+}
+.client-details p {
+	color: var(--e-global-color-primary);
 }
 
 .slick-next {

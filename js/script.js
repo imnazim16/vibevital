@@ -11,19 +11,27 @@ $('.logo-slider').slick({
 	autoplaySpeed: 2000,
 	responsive: [
 		{
-			breakpoint: 768,
+			breakpoint: 840,
 			settings: {
-				arrows: false,
-				centerMode: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: true,
 			},
 		},
 		{
-			breakpoint: 480,
+			breakpoint: 640,
 			settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 1,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				infinite: true,
+			},
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				infinite: true,
 			},
 		},
 	],
@@ -39,15 +47,52 @@ $('.test-slider').slick({
 	autoplaySpeed: 2000,
 	responsive: [
 		{
-			breakpoint: 995,
+			breakpoint: 840,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 2,
 				slidesToScroll: 1,
 				infinite: true,
 			},
 		},
+		{
+			breakpoint: 541,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				arrows: false,
+			},
+		},
+		// {
+		// 	breakpoint: 500,
+		// 	settings: {
+		// 		arrows: fasle,
+		// 		slidesToShow: 1,
+		// 		slidesToScroll: 1,
+		// 		infinite: true,
+		// 	},
+		// },
 	],
 });
+
+// Sidebar menu 
+const openMenu = document.querySelector(".menu-bar");
+const closeMenu = document.querySelector(".close-menu");
+const sidebarItems = document.querySelector('nav ul');
+const overlay = document.querySelector('.overlay');
+
+openMenu.addEventListener("click",()=>{
+	sidebarItems.classList.add("active");
+	overlay.classList.add("active");
+})
+closeMenu.addEventListener("click",()=>{
+	sidebarItems.classList.remove("active");
+	overlay.classList.remove("active");
+})
+overlay.addEventListener("click",()=>{
+	sidebarItems.classList.remove("active");
+	overlay.classList.remove("active");
+})
 
 // ------- pop-up ---------
 
@@ -81,3 +126,4 @@ accBox.forEach((item, index) => {
 		symbol[index].textContent = "-"
 	})
 });
+
